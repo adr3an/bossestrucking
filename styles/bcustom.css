@@ -1,0 +1,144 @@
+/* custom styles for bootstrap  */
+body{
+    background-color: #f2f3f8;
+    font-family: 'Lato', sans-serif;
+}
+.navbar {
+    background: #fff;
+    width: 100%;
+}
+.nav-item .nav-link {
+    color: #363d41;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.nav-item .nav-link:hover {
+    color: #7a8c90;
+  
+}
+.nav-item .navbar-brand{
+    color: #363d41;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    
+    letter-spacing: .1em;
+}
+.logo{
+    color: #363d41;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    letter-spacing: .1em;
+}
+
+#btn1{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding: 8px 24px;
+    border-radius: 0;
+    margin-left: 30px;
+}
+#btn2{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    border-radius: 0;
+    background-color: #7a8c90;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+   
+}
+
+#btn2:hover{
+    background-color: black;
+}
+
+.carousel .carousel-item {
+    height: 650px;
+  }
+  
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 2px;
+  
+}
+
+div h5{
+    font-size: 48px;
+}
+
+#form {
+    background-color:#fff;
+    padding: 35px;
+    width: 80%;
+    margin: auto;
+}
+
+.box{
+    width: 80%;
+    margin: auto; 
+}
+.form-control{
+    background-color: #f2f3f8;
+}
+
+.overlay{
+    position: absolute;
+    top: 50%; 
+    z-index: 3;
+    left: 25%;
+    padding: 10px 15px;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    color: #fff;
+    display: none;
+    
+
+}
+
+
+.base:hover .overlay{
+    display: block;
+
+
+}
+
+.base{
+  
+    position: relative; 
+    z-index: 1;
+}
+#smallNav{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel .carousel-item {
+       height: 20em;
+      }
+      .nav-item .nav-link {
+     font-size: 10px;
+    }
+    #btn1{
+      display: block;
+    }
+    .overlay{
+        position: absolute;
+        top: 40%; 
+        z-index: 3;
+        left: 35%;
+        display: block;
+        
+    
+    }
+    #smallNav{
+        display: block;
+    }
+    #largeNav{
+        display: none;
+    }
+}
